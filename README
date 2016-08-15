@@ -3,3 +3,5 @@ Site Features include:
 	- jQuery implementation (accordions, select items, button) with custom theme
 	- CSS3 animation (on Bridge Quiz page - drawbridge raises and lowers)
 	- Vanilla js script: stores quiz selections and returns "Correct/Incorrect" alert window after pressing "Submit"
+	
+Also view this site directly at: http://profondodesign.com/portland_bridges/index.html
