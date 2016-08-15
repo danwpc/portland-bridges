@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Responsive Image Test</title>
+
+<style type="text/css">
+body {
+	border: 20px solid;
+}
+.container {
+	width: 60%;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: #CCC;
+}
+.mapContainer  {
+	margin-left: 100px;
+}
+.mapContainer img {
+	max-width: 100%;
+	height: auto;
+	min-width: 200px;
+}
+</style>
+</head>
+
+<body>
+    <div class="container">
+    	<div class="quiz">
+         <ol>
+           <li>
+             <select>
+               <option id="selectOne" value="selectOne">- Select a Bridge -</option>
+               <option id="third" value="third">Broadway Bridge</option>
+               <option id="fifth" value="fifth">Burnside Bridge</option>
+               <option id="second" value="second">Freemont Bridge</option>
+               <option id="seventh" value="seventh">Hawthorne Bridge</option>
+               <option id="eighth" value="eighth">Marquam Bridge</option>
+               <option id="sixth" value="sixth">Morrison Bridge</option>
+               <option id="tenth" value="tenth">Ross Island Bridge</option>
+               <option id="eleventh" value="eleventh">Sellwood Bridge</option>
+               <option id="first" value="first">St. John's Bridge</option>
+               <option id="fourth" value="fourth">Steele Bridge</option>
+               <option id="ninth" value="ninth">Tilikum Crossing</option>
+             </select>
+           </li>
+		</ol> 
+        <input name="btnsubmit" type="submit" id="fsubmit"value="Submit Your List" onClick="fsubmit"/>
+       </div><!--end quiz-->
+       <div class="mapContainer"> <img src="assets/images/portland_bridge_map.png"></div>
+    
+    </div><!--end container-->
+
+</body>
+</html>

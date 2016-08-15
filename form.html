@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Local Storage Test</title>
+
+<script>
+function getParameterByName(name) {
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
+</script>
+<script>
+$('input[type="submit"][value="Search"]').click(function() {
+    sessionStorage.setItem('clicked', 'true');
+});
+</script>
+<script>
+var clicked = sessionStorage.getItem('clicked');
+</script>
+</head>
+
+<body>
+<form method="GET">
+    <input type="hidden" name="clicked" value="true" />
+    <input type="submit" />
+</form>
+</body>
+</html>

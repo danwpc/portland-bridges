@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+
+<style type="text/css">
+.wrapper {
+	margin: 40px auto;
+	width: 80%;
+	position: relative;
+	background-color: tan;
+}
+.arrows {
+}
+.text {
+	display: block;
+	height: 100px;
+	width: 100px;
+	color: white;
+	background-color: red;
+	animation-name: slide;
+	/*animation-duration: 2s;
+	animation-timing-function: ease-in-out;*/
+	/*animation-iteration-count: 1;*/
+	animation-delay: 1s;
+	animation-fill-mode: both;
+	/*animation-direction: alternate;*/
+	animation: slide 10s linear infinite;
+	animation-play-state:paused;
+}
+.text:hover {
+	animation-play-state:running;
+}
+@keyframes slide {
+	/*0% {transform: translateX(100px) rotate(0turn);}
+	20% {transform: translateX(-10px) rotate(-0.5turn);}
+	100% {transform:translateX(450px) rotate(2turn);}*/			
+	100% {transform:translateX(0) rotate(10turn);}			
+}
+
+/*.arrows:hover {
+	background-color: red;
+}*/
+	
+</style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="text">
+        Just use this text<!--<img src="assets/images/animated_arrows.png" width="800" height="720">-->
+        </div>
+    </div>
+</body>
+</html>

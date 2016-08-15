@@ -1,0 +1,308 @@
+					      /* reset */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset {
+	padding: 0;
+	margin: 0;
+	font-size: 100%;
+	font-weight: normal;
+}
+img, fieldset { border: 0; }
+
+/*COLORS*/
+
+.colors {
+	color: #ffff66; /*yellow - map*/
+	color: #3399ff; /*blue - jquery spoilers*/
+	color: #33ff66; /*green - jquery spoilers*/
+	color: rgba(34, 34, 34, .5); /*slate grey - bg for titles, jquery spoilers, nav, footer*/
+	color: rgba(102, 102, 102, .8) /*lighter grey - jquery hover*/
+}
+
+
+/*TEXT*/
+h1 {
+	font-size: 3em;
+	color: #fff;
+	margin: 30px auto;
+	padding: 30px;
+	text-align: center;
+	line-height: 1;
+	font-variant: small-caps;
+}
+h2 {
+	font-size: 2.2rem;
+	color: white;
+	font-variant: small-caps;
+}
+h2.study {
+	float: left;
+	margin-left: 40px;
+}
+h2.takeQuiz {
+	float: right;
+	margin-right: 40px;
+}
+h2.stories {
+	text-align: center;
+	margin-top: -50px;
+}
+.homePageTitle,
+.bridgePageTitle,
+.bridgeQuizTitle {
+	width: 70%;
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: rgba(34, 34, 34, .5000);
+}
+.bridgeQuizTitle h1 {
+	padding-bottom: 0;
+}
+.quiz span {
+	font-size: .9em;
+}
+
+
+/*LINKS*/
+
+li a, 
+footer a,
+h2 a {
+	color: white;
+	text-decoration: none;
+}
+li a:hover, 
+footer a:hover,
+h2 a:hover {
+    color: red;
+}
+
+
+/*BUTTONS*/
+
+#fsubmit {
+	margin-left: 3.3em;
+	margin-top: 20px;
+	width: 190px;
+}
+.ui-selectmenu-button.ui-button {
+	width: 11em;
+}
+span.ui-selectmenu-text,
+#fsubmit {
+	font-size: 1em;
+}
+
+
+/*HTML, BODY, SECTION*/
+html, body {
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	height: 100%;
+}
+.homePage {
+	max-width: 1980px;
+	background-image:url(../images/steele.jpg);
+	height: 100%;
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	margin: 0 auto;
+}
+.bridgePage {
+	max-width: 1980px;
+	background: url(../images/hawthorne-amphitheatre-lantern.jpg) no-repeat center;
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	margin: 0 auto;
+}
+.quizPage {
+	background-color: #DDD;
+}
+
+
+/*HEADER/NAV*/
+
+header {
+	display: block;
+	width: 100%;
+	background-color: rgba(34, 34, 34, .7000);
+	position: fixed;
+	z-index: 1000;
+}
+nav {
+	padding: 0.1rem 0;
+}
+nav ul {
+	padding: 0;
+	margin-left: 1.5rem;
+	align: right;
+}
+nav li {
+	font-size: 1.2rem;
+	list-style-type: none;
+	display: inline;
+	padding-right: 1rem;
+}
+nav ul ul {
+	display: none;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*CONTENT*/
+
+.content {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 30px; /*needed in order to keep distance from header bar - which is position: fixed*/
+}
+
+
+	/*Bridge Stories*/
+
+.accordionWrapper {
+	max-width: 700px;
+	margin: 40px auto 0 auto;
+	padding-bottom: 50px;
+	background-color: transparent;
+}
+.photoInset  {
+	margin: 10px auto 20px auto;
+	max-width: 600px;
+}
+.photoInset img {
+	max-width: 100%;
+	height: auto;
+	min-width: 250px;
+}
+
+
+	/*Bridge Quiz*/
+	
+.quizPage .content {
+	max-width: 1000px;
+	min-width: 320px;
+	margin: 0 auto;
+	background-color: #CCC;
+	border-radius: 50px;
+	z-index: 600;
+}
+.quiz {
+	height: 700px;
+}
+.quiz ol {
+	padding-left: 3.3em;
+}
+.instructions {
+	padding-left: 5em;
+	line-height: 1.2;
+	font-size: .8rem;
+}
+.animatedMapContainer  {
+	float: right;
+	position: relative;
+	margin: -710px 40px 30px 270px;
+	max-width: 800px;
+	padding-bottom: 50px;
+}
+.mapContainer  {
+	max-width: 100%;
+	float: left;
+}
+.mapContainer img {
+	max-width: 100%;
+	min-width: 300px;
+}
+
+/*Animated Drawbridge*/
+.animationWrapper {
+	position: absolute;
+	top: 14%;
+	left: 36%;
+	width: 100%;
+}
+.drawbridgeLeft img {
+	max-width: 20%;
+	height: auto;
+	min-width: 50px;
+	-webkit-animation: bridgeTilt 10s ease-in-out .5s 1 alternate both;/*shorthand: name duration timing-function delay iteration-count direction fill-mode*/
+	-moz-animation: bridgeTilt 10s ease-in-out .5s 1 alternate both;
+	animation: bridgeTilt 10s ease-in-out .5s 1 alternate both;
+	-webkit-transform-origin: left bottom;	
+	-moz-transform-origin: left bottom;	
+	transform-origin: left bottom;	
+}
+@keyframes bridgeTilt {
+	40% {transform:rotate(-30deg);}
+	60% {transform:rotate(-30deg);}
+	100% {transform: rotate(0deg);}
+}
+
+.water {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 500;
+}
+
+
+/*JQUERY*/
+
+.ui-state-default, 
+.ui-widget-header .ui-state-default, 
+.ui-button, 
+ html .ui-button.ui-state-disabled:active {
+	background-color: rgba(34, 34, 34, .7000);
+	color: #FFF;
+}
+.ui-state-default:hover {
+	background-color: rgba(102, 102, 102, .80) !important;
+}
+.ui-state-hover .ui-icon, 
+.ui-state-focus .ui-icon, 
+.ui-button:hover .ui-icon, 
+.ui-button:focus .ui-icon, 
+.ui-state-default .ui-icon {
+	background-image: url(../jquery/jquery-ui-1.12.0.custom/images/ui-icons_ffffff_256x240.png);
+}
+
+
+/*FOOTER*/
+
+footer {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	line-height: 3;
+	background-color: rgba(34, 34, 34, .7000);
+	color: white;
+	text-align: center;
+	margin-top: 5rem;
+	font-size: 0.75rem;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 585px) {
+	.animatedMapContainer  {
+		margin: -190px 30px 80px 0;
+		float: none;
+	}
+	.mapContainer img {
+		max-width: 90%;
+		height: auto;
+	}
+	.animationWrapper {
+		top: 120%;
+		left: 32%;
+	}
+}
+@media (max-width: 400px) {
+	.animationWrapper {
+		top: 100%;
+		left: 36%;
+	}
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Portland Bridge Quiz</title>
+    <link href="assets/jquery/jquery-ui-1.12.0.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/styles.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="assets/jquery/jquery-ui-1.12.0.custom/jquery-ui.js"></script>
+	<script> 
+    /*function SubmitClick() { 
+        $("#fsubmit").click(function(event) { alert("it works!"); 
+        }); 
+    } 
+    $(document).ready(function() { SubmitClick(); });*/ 
+    </script>
+</head>
+
+<body class="quizPage">
+ <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portlandBridges.html">Bridges</a></li>
+        <li><a href="bridgeQuiz.html">Bridge Quiz</a></li>
+      </ul>
+    </nav>
+  </header>
+   <div class="content">
+     <div class="bridgeQuizTitle">
+      <h1>Portland Bridge Quiz <br>
+<span>&nbsp;</span></h1>
+	 </div><!--endbridgeQuizTitle-->
+    	<div class="quiz">
+          <div class="instructions"><strong>Instructions:</strong> <p>Can you match the bridges <br>with numbers
+ on the map?</p></div>
+            <ol>
+               <li>    
+                 <select name="menu1" id="menu1">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu2" id="menu2">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu3" id="menu3">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu4" id="menu4">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu5" id="menu5">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu6" id="menu6">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu7" id="menu7">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu8" id="menu8">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu9" id="menu9">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu10" id="menu10">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+               <li>    
+                 <select name="menu11" id="menu11">               
+                   <option class="selectOne" value="selectOne">- Select a Bridge -</option>
+                   <option class="third" value="Broadway Bridge">Broadway Bridge</option>
+                   <option class="fifth" value="Burnside Bridge">Burnside Bridge</option>
+                   <option class="second" value="Fremont Bridge">Fremont Bridge</option>
+                   <option class="seventh" value="Hawthorne Bridge">Hawthorne Bridge</option>
+                   <option class="eighth" value="Marquam Bridge">Marquam Bridge</option>
+                   <option class="sixth" value="Morrison Bridge">Morrison Bridge</option>
+                   <option class="tenth" value="Ross Island Bridge">Ross Island Bridge</option>
+                   <option class="eleventh" value="Sellwood Bridge">Sellwood Bridge</option>
+                   <option class="first" value="St. John's Bridge">St. John's Bridge</option>
+                   <option class="fourth" value="Steele Bridge">Steele Bridge</option>
+                   <option class="ninth" value="Tilikum Crossing">Tilikum Crossing</option>
+                 </select>
+               </li>
+            </ol> 
+        <input name="btnsubmit" type="submit" id="fsubmit"value="Submit Your List" onClick="fsubmit"/>
+       </div><!--end quiz-->
+	   <div class="animatedMapContainer">
+         <div class="mapContainer"> <img src="assets/images/portland_bridge_map.png"></div>
+            <div class="animationWrapper">
+              <div class="drawbridgeLeft"><img src="assets/images/drawbridge-left.png" width="194" height="85" alt="Drawbridge icon"></div>
+              <!--<div class="water"><img src="assets/images/water.png" width="233" height="27" alt="Water"></div>--> 
+            </div><!--end animationWrapper-->
+       </div><!--end animatedMapContainer-->
+    </div><!--end content-->
+<footer>Copyright &copy; 2016 <a href="http://profondodesign.com">Daniel Portis-Cathers</a></footer>
+ <script src="assets/jquery/bridgeQuiz.js"></script>
+</body>
+</html>
